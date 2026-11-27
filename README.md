@@ -121,3 +121,7 @@ autoclicker/
 
 MIT License
 
+## 🛠️ Credits & Workflow
+
+Designed, architected, tested on real Wayland hardware, and packaged for Debian/Arch/Fedora by **sunako** using an AI-assisted code generation and iterative auditing workflow.
+
