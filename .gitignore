@@ -1,0 +1,21 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# Build artifacts (attach binaries to GitHub Releases instead)
+build_root/
+rpmbuild/
+pkg/
+src/
+*.deb
+*.rpm
+*.pkg.tar.zst
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+

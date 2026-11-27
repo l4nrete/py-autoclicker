@@ -1,0 +1,29 @@
+#!/usr/bin/python3
+import os
+import shutil
+import sys
+
+APP_DIR = "/usr/share/py-autoclicker"
+if APP_DIR not in sys.path:
+    sys.path.insert(0, APP_DIR)
+
+USER_CONFIG_DIR = os.path.expanduser("~/.config/py-autoclicker")
+USER_CONFIG_PATH = os.path.join(USER_CONFIG_DIR, "config.toml")
+SYSTEM_CONFIG_PATH = "/etc/py-autoclicker/config.toml"
+
+
+def ensure_user_config() -> None:
+    if not os.path.exists(USER_CONFIG_PATH):
+        os.makedirs(USER_CONFIG_DIR, exist_ok=True)
+        if os.path.exists(SYSTEM_CONFIG_PATH):
+            shutil.copy2(SYSTEM_CONFIG_PATH, USER_CONFIG_PATH)
+
+
+if __name__ == "__main__":
+    ensure_user_config()
+    if "--config" not in sys.argv:
+        sys.argv.extend(["--config", USER_CONFIG_PATH])
+
+    from autoclicker.main import main
+    sys.exit(main() or 0)
+

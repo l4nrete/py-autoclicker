@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Py-Autoclicker
+Comment=Native Wayland & X11 Auto-Clicker for Linux
+Exec=/usr/bin/py-autoclicker
+Icon=input-mouse
+Terminal=false
+Type=Application
+Categories=Utility;GTK;
+Keywords=autoclicker;clicker;mouse;macro;wayland;
+StartupNotify=true
+

@@ -1,0 +1,44 @@
+# Py-Autoclicker default configuration
+active_profile = "default"
+
+[profiles.default]
+name = "Default Desktop"
+button = "BTN_LEFT"
+mode = "infinite"
+cps = 10.0
+
+# Humanization
+use_temporal_jitter = true
+temporal_jitter_stddev_ms = 5.0
+use_spatial_jitter = false
+spatial_jitter_radius = 3
+click_duration_min_ms = 40.0
+click_duration_max_ms = 85.0
+
+# Safety & Override
+user_override_timeout_sec = 3.0
+# max_clicks = 1000  # Uncomment to set a click limit (omit for infinite)
+
+# Hotkeys
+toggle_hotkey = "KEY_F6"
+pause_hotkey = "KEY_F7"
+emergency_stop_hotkey = "KEY_ESC"
+
+[profiles.gaming]
+name = "Fast Gaming"
+button = "BTN_LEFT"
+mode = "infinite"
+cps = 18.0
+
+use_temporal_jitter = true
+temporal_jitter_stddev_ms = 3.5
+use_spatial_jitter = true
+spatial_jitter_radius = 2
+click_duration_min_ms = 25.0
+click_duration_max_ms = 45.0
+
+user_override_timeout_sec = 3.0
+toggle_hotkey = "KEY_F6"
+pause_hotkey = "KEY_F7"
+emergency_stop_hotkey = "KEY_ESC"
+

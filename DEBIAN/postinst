@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+
+# Load the uinput kernel module immediately
+modprobe uinput || true
+
+# Reload udev rules and explicitly trigger uinput + input devices so uaccess ACL applies right away
+udevadm control --reload-rules || true
+udevadm trigger --subsystem-match=misc --name-match=uinput || true
+udevadm trigger --subsystem-match=input || true
+
+echo "py-autoclicker installed successfully. Input permissions granted via uaccess."
+

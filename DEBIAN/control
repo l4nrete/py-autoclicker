@@ -1,0 +1,12 @@
+Package: py-autoclicker
+Version: 1.0.0-1
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: l4nrete
+Depends: python3 (>= 3.12), python3-evdev, python3-pydantic, python3-dasbus, python3-gi, gir1.2-adw-1, udev, kmod
+Description: Native Wayland Autoclicker for Ubuntu / GNOME
+ Low-level evdev/uinput auto-clicker built for GNOME / Mutter on Wayland.
+ Features a native GTK4/Libadwaita UI, Gaussian temporal jitter, spatial
+ micro-drift, automatic user override, and zero-relogin uaccess permissions.
+
