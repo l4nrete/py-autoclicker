@@ -1,3 +1,5 @@
+<img width="512" height="755" alt="image" src="https://github.com/user-attachments/assets/e3925869-e738-49fb-a884-339f6eac68e6" />
+
 # ⚡ Py-Autoclicker (Wayland & X11)
 
 A native, low-level auto-clicker for modern Linux desktops (**GNOME / Mutter on Wayland**, KDE, Hyprland, Sway, and X11), built on top of Linux kernel `evdev`/`uinput` subsystems and a **GTK4 + Libadwaita** user interface.
